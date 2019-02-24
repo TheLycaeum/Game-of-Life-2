@@ -15,7 +15,7 @@ def neighbours(matrix):
     neighbours_list = [[j-1, i-1], [j-1, i], [j-1, i+1], [j, i-1], [j, i+1],[j+1, i-1],[j+1, i],[j+1, i+1]]
     return  neighbours_list
 
-def real_neighbours(neighbours_list):
+def real_neighbours(neighbours_list): # It's not clear what you mean by "onboard neighbours", "real neighbours", "total neighbours" etc. Please be specific.
     """provide onboard neighbours of all position form total neighbours """
     
     a = []
