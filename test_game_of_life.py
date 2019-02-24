@@ -28,8 +28,8 @@ def test_apply_rule():
 
 def test_display():
     matrix1 = [[0, 0, 0], [1, 1, 1], [0, 0 , 0]]
-    assert Game_of_life.display(matrix1) == "\n. . . \n0 0 0 \n. . . "
+    assert Game_of_life.display(matrix1) == ". . .\n0 0 0\n. . ."
     
     matrix = [[0, 1, 0], [0, 1, 0], [0, 1 , 0]]
-    assert Game_of_life.display(matrix) == "\n. 0 . \n. 0 . \n. 0 . "
+    assert Game_of_life.display(matrix) == ". 0 .\n. 0 .\n. 0 ."
                                             

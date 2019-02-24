@@ -74,15 +74,14 @@ def display(board):
     """display the game output in a combination of zeros and period"""
     row = len(board)
     column =  len(board[0])
-    a = ""
+    a = []
     for i in range(row):
+        t = []
         for j in range(column):
-            if j == 0:
-                a += "\n"
             if board[i][j] == 1:
-                a += "0 "
+                t.append("0")
             if board[i][j] == 0:
-                a += ". "
-            
-    return a
+                t.append(".")
+        a.append(" ".join(t))
+    return "\n".join(a)
     
