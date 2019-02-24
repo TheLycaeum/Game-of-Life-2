@@ -11,14 +11,9 @@ def neighbours_of_position(matrix, position):
 
 def neighbours(matrix):
     """ provides the eight neighbours of all positions of matrix """
-    
-    for sub_list in matrix:
-        for j in range(len(matrix)):
-            for i in range(len(sub_list)):
-                my_pos = [j, i]
-                neighbours_list = [[j-1, i-1], [j-1, i], [j-1, i+1], [j, i-1], [j, i+1],[j+1, i-1],[j+1, i],[j+1, i+1]]
-                    
-                return  neighbours_list
+    j=i=0
+    neighbours_list = [[j-1, i-1], [j-1, i], [j-1, i+1], [j, i-1], [j, i+1],[j+1, i-1],[j+1, i],[j+1, i+1]]
+    return  neighbours_list
 
 def real_neighbours(neighbours_list):
     """provide onboard neighbours of all position form total neighbours """
