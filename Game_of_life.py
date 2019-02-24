@@ -5,14 +5,9 @@ def neighbours_of_position(matrix, position):
 
     """ for providing neighbours of a particular position and return all the eight neighbours of that position """
     
-    for sub_list in matrix:
-        for j in range(len(matrix)):
-            for i in range(len(sub_list)):
-                my_pos = [j, i]
-                if my_pos == position:
-                    neighbours_list = [[j-1, i-1], [j-1, i], [j-1, i+1], [j, i-1], [j, i+1],[j+1, i-1],[j+1, i],[j+1, i+1]]
-                    
-                    return  neighbours_list
+    j,i = position
+    neighbours_list = [[j-1, i-1], [j-1, i], [j-1, i+1], [j, i-1], [j, i+1],[j+1, i-1],[j+1, i],[j+1, i+1]]
+    return  neighbours_list
 
 def neighbours(matrix):
     """ provides the eight neighbours of all positions of matrix """
