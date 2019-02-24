@@ -57,15 +57,15 @@ def apply_rules(alive_list, matrix):
     columns = len(matrix[0])    
     for i in range(rows):
         for j in range(columns):
-            """first and second rules"""
+            # first and second rules
             if matrix[i][j]:
                 if alive_list[i][j] < 2 or  alive_list[i][j] > 3:
                     matrix[i][j] = 0
-            """third rule"""        
+            # third rule
             if matrix[i][j]:
                 if alive_list[i][j] == 3 or alive_list[i][j] == 2:
                     matrix[i][j] = 1
-            """fourth rule"""
+            # fourth rule 
             if matrix[i][j] == 0 and alive_list[i][j] == 3:
                 matrix[i][j] =1
     return matrix
